@@ -1,0 +1,234 @@
+body {
+  font-family:"DotGothic16", 'Open Sans',sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  margin: 20px;
+  padding: 0;
+  background-color: #7e9db5; /* 背景は濃いブルー */
+  color: #fff; /* 文字色を白に統一 */
+}
+
+header h1{
+font-size: 48px;
+}
+h2{
+color:#ffd700
+}
+p{
+font-size:18px;
+padding-left: 4em;
+}
+ul{
+padding-left: 8em;
+}
+
+.animation-1{
+ display: inline-block;
+ animation: spin 4s steps(8) infinite;
+ transform-origin:center;
+ vertical-align:middle;
+}
+@keyframes spin{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+  /* language switching*/
+  button {
+  color: #ffd700;
+  font-family: "DotGothic16", sans-serif;
+  border: none;       /* 枠消す */
+  background: none;   /* 背景も消す（必要なら） */
+  cursor: pointer;     /* マウスをポインターに */
+  transition: 0.3s;  /* ふわっと変化 */
+}
+button:hover {
+  opacity: 0.5;  /* 0〜1（小さいほど透明） */
+}
+.slash {
+  color: #ffd700;
+}
+  /* インデント用クラス */
+.indent {
+  text-indent: 2em;
+}
+.extra-space {
+  margin-top: 48px;
+}
+/* 前行との間を開けてインデント */
+.indent-space {
+  margin-top: 32px;   /* 前の段落との間隔 */
+  text-indent: 4em;   /* 文字のインデント */
+  margin-bottom: 16px; /* 下の行との標準間隔 */
+}
+
+.timeline{
+  position: relative;
+  margin: 40px auto;
+  max-width: 800px;
+}
+.timeline::before{
+  content:"";
+  position: absolute;
+  left: 150px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ffd700;
+}
+.timeline-item{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeline-date{
+  width: 140px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #ffd700;
+}
+.timeline-body{
+  padding-left: 40px;
+}
+.timeline-item::before{
+  content:"";
+  position: absolute;
+  left: 145px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #ffd700;
+  border-radius: 50%;
+}
+
+/* ===== 見出し ===== */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* ===== 段落 ===== */
+p {
+  margin-bottom: 16px;
+}
+
+/* ===== 画像 ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.work-img{
+  cursor:pointer;
+  transition: 0.3s;
+}
+.work-img:hover{
+opacity: 0.8;
+}
+#modal{
+  visibility: hidden;
+  opacity:0;
+
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+
+  transition: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#modal.show{
+  visibility: visible;
+  opacity:1;
+}
+
+#modalimg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+
+  max-height: 80%;
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #000;
+  
+  transition: transform 0.3s ease;
+}
+
+#modal.show #modalimg{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* ===== リンク ===== */
+a {
+  color: #ffd700; /* 白背景だと見えないのでリンクは目立つ色に変更 */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== ヘッダー ===== */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #7e9db5;
+  color: #fff; /* ヘッダー文字も白 */
+}
+.name {
+  color: #ffd700
+}
+
+/* ヘッダー内H1 */
+header h1 {
+  font-size: 36px;
+  line-height: 1.2;   
+  margin-bottom: 10px;
+}
+
+/* ヘッダー内H4 */
+header h4 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+/* ===== セクション ===== */
+main section {
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: transparent; /* 白背景はやめて透明にして全体色を活かす */
+  border-radius: 10px;
+  /* box-shadowを消すか色を調整 */
+}
+
+main section h2 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+#education h2 {
+  color: #ffd700;
+}
+
+/* ===== セクション内リンク ===== */
+main section h2 a {
+  color: #ffd700;        /* 文字色はリンク色に合わせる */
+  text-decoration: none; /* 下線なし */
+}
+
+main section h2 a:hover {
+  text-decoration: underline; /* ホバー時だけ下線 */
+}
+
+main section p {
+  margin-bottom: 16px;
+}

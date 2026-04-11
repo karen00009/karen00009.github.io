@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button onclick="location.href='index.html'">日本語</button>
+  <span class="slash">/</span>
+  <button onclick="location.href='index-en.html'">English</button>
+  
+  <header>
+    <h1>西田 香蓮</h1>
+    <h3>NISHIDA KAREN</h3>
+  </header>
+
+  <main>
+    <section id="education">
+      <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　EDUCATION</h2>
+        <p>早稲田大学文化構想学部文化構想学科文芸・ジャーナリズム論系</p>
+        <p>2023年4月〜2027年3月（卒業予定）</p>
+    </section>
+
+    <section id="links">
+      <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　LINKS</h2>  
+       <ul>
+        <li>Linledin</li>
+        <li>Instagram</li>
+        <li>X</li>
+       </ul>
+    </section>
+
+    <section id="skills">
+      <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　SKILLS</h2>
+        <p>Design Tools</p>  
+          <ul>
+            <li>Adobe Illustration</li>
+            <li>Adobe Photoshop</li>
+            <li>Figma</li>
+          </ul>
+        <p>Coding Tools</p>  
+          <ul>
+            <li>HTML/CSS</li>
+            <li>Java Script</li>
+          </ul>
+        <p>Languages</p>
+         <ul>
+            <li>Japanese</li>
+            <li>English (2025年1月 TOEIC L&R 980点取得)</li>
+            <li>Korean</li>
+          </ul>
+    </section>
+
+    <section id="UI">
+      <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　UI</h2>
+      <p>BUNKO</p>
+    </section>
+</main>
+
+<script>
+const img = document.getElementById("img");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalimg");
+
+img.onclick=function(){
+  modal.classList.add("show");
+  modalImg.src=img.src;
+}
+
+modal.onclick=function(){
+  modal.classList.remove("show");
+}
+</script>
+
+</body>
+</html>
