@@ -7,12 +7,38 @@ body {
   background-color: #7e9db5; /* 背景は濃いブルー */
   color: #fff; /* 文字色を白に統一 */
 }
+.btn-jpn{
+display: none;
+}
+.slash{
+display: none;
+}
+.btn-eng{
+display: none;
+}
+a {
+  color: #fff; 
+  text-decoration: none;
+}
+.top-link{
+  color:#ffd700;
+  text-decoration: none;
+  cursor: pointer;    
+  transition: 0.3s;  
+}
+.top-link:hover {
+  opacity: 0.5; 
+}
 
 header h1{
 font-size: 48px;
 }
 h2{
 color:#ffd700
+}
+header nav button{
+  margin-top: 10px;
+  font-size: 22px;
 }
 p{
 font-size:18px;
@@ -32,19 +58,47 @@ padding-left: 8em;
   from{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
 }
-
-  /* language switching*/
+#links a{
+  color:#fff;
+  cursor: pointer;
+  transition: 0.3s;  
+}
+#links a:hover{
+  color:#ffd700;
+  opacity:0.8;
+}
+.underline-ui{
+  display:block;
+  max-width: 60px;
+  height:8px;
+  overflow: hidden;
+}
+#page-ui .underline-ui{
+  width:60px;
+}
+.nav-item{
+  display:inline-block;
+  text-align: center;
+}
   button {
   color: #ffd700;
   font-family: "DotGothic16", sans-serif;
-  border: none;       /* 枠消す */
-  background: none;   /* 背景も消す（必要なら） */
-  cursor: pointer;     /* マウスをポインターに */
-  transition: 0.3s;  /* ふわっと変化 */
+  border: none;       
+  background: none;   
+  cursor: pointer;    
+  transition: 0.3s;  
 }
 button:hover {
-  opacity: 0.5;  /* 0〜1（小さいほど透明） */
+  opacity: 0.5; 
 }
+
+#ui1{
+  padding-left: 60px;
+}
+#ui1 h4{
+  color:#fff;
+}
+
 .slash {
   color: #ffd700;
 }
@@ -163,17 +217,6 @@ opacity: 0.8;
 
 #modal.show #modalimg{
   transform: translate(-50%, -50%) scale(1);
-}
-
-
-/* ===== リンク ===== */
-a {
-  color: #ffd700; /* 白背景だと見えないのでリンクは目立つ色に変更 */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* ===== ヘッダー ===== */

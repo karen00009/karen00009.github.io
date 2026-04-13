@@ -15,57 +15,60 @@
 </head>
 
 <body>
-  <button onclick="location.href='index.html'">日本語</button>
-  <span class="slash">/</span>
-  <button onclick="location.href='index-en.html'">English</button>
-  
+  <!--いったん隠す-->
+  <button class="btn-jpn" onclick="location.href='index.html'">
+    日本語
+  </button>
+  <span class="slash">
+    /
+  </span>
+  <button class="btn-eng" onclick="location.href='index-en.html'">
+    English
+  </button>
+  <!--いったん隠す-->
+
   <header>
     <h1>西田 香蓮</h1>
     <h3>NISHIDA KAREN</h3>
+      <nav>
+        <button onclick="location.href='ui.html'">UI</button>
+        <button onclick="location.href='graphic.html'">GRAPHIC</button>
+        <button onclick="location.href='typography.html'">TYPOGRAPHY</button>
+      </nav>
   </header>
 
-  <main>
+   <main>
+  <section id="skills">
+    <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　SKILLS</h2>
+      <h4>Design Tools</h4>  
+      <p>
+        <img class="figlogo" src="images/figlogo.png" alt="figmalogo" width="40px">
+        Figma / 
+        Illustrator / 
+        InDesign /
+        Photoshop</p>
+      <h4>Coding Tools</h4>  
+      <p>HTML / CSS / Java Script</p>
+      <h4>Languages</h4>
+        <p>Japanese > English > Korean</p>
+        <p>（2025年1月 TOEIC L&R 980点取得）</p>
+  </section>
+
     <section id="education">
       <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　EDUCATION</h2>
-        <p>早稲田大学文化構想学部文化構想学科文芸・ジャーナリズム論系</p>
+        <p>早稲田大学文化構想学部</p>
+        <p>文化構想学科文芸・ジャーナリズム論系</p>
         <p>2023年4月〜2027年3月（卒業予定）</p>
     </section>
 
+   
     <section id="links">
       <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　LINKS</h2>  
-       <ul>
-        <li>Linledin</li>
-        <li>Instagram</li>
-        <li>X</li>
-       </ul>
+       <p>
+        <a href="https://www.linkedin.com/in/karen-n-11a562312/" target="_blank">
+          <img class="inlogo" src="images/inlogo.png" alt="inlogo" width="40px">
+          Linkedin</a></p>
     </section>
-
-    <section id="skills">
-      <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　SKILLS</h2>
-        <p>Design Tools</p>  
-          <ul>
-            <li>Adobe Illustration</li>
-            <li>Adobe Photoshop</li>
-            <li>Figma</li>
-          </ul>
-        <p>Coding Tools</p>  
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Java Script</li>
-          </ul>
-        <p>Languages</p>
-         <ul>
-            <li>Japanese</li>
-            <li>English (2025年1月 TOEIC L&R 980点取得)</li>
-            <li>Korean</li>
-          </ul>
-    </section>
-
-    <section id="UI">
-      <h2><img class="animation-1" src="images/animation-1.png" alt="animation-1" width="40px">　UI</h2>
-      <p>BUNKO</p>
-    </section>
-</main>
 
 <script>
 const img = document.getElementById("img");
